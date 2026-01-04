@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Care Clinic</title>
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #222;
+  background: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background: #0d6efd;
+  padding: 15px 0;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+.btn {
+  background: #0d6efd;
+  color: #fff;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+}
+
+/* Hero */
+.hero {
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero-buttons a {
+  margin-right: 10px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+/* Sections */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.features,
+.services,
+.doctor,
+.info {
+  padding: 60px 0;
+}
+
+/* Features */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Services */
+.service-list {
+  max-width: 500px;
+  margin: auto;
+  list-style: none;
+}
+
+.service-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Doctor */
+.doctor-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.doctor-box img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Info */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* CTA */
+.cta {
+  background: #0d6efd;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">CityCare Clinic</h1>
+      <a href="#appointment" class="btn">Book Appointment</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Trusted Healthcare, Close to Home</h2>
+        <p>Experienced doctors • Clean clinic • Affordable treatment</p>
+        <div class="hero-buttons">
+          <a href="#appointment" class="btn">Book Appointment</a>
+          <a href="tel:+911234567890" class="btn outline">Call Now</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="Doctor Consultation.JPG" alt="Doctor Consultation">
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="features">
+    <div class="container">
+      <h3 class="section-title">Why Choose Our Clinic</h3>
+      <div class="feature-grid">
+        <div class="feature-card">🩺 Experienced Doctors</div>
+        <div class="feature-card">🧼 Clean & Hygienic Clinic</div>
+        <div class="feature-card">⏱️ Minimal Waiting Time</div>
+        <div class="feature-card">💊 Affordable Treatment</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container">
+      <h3 class="section-title">Our Services</h3>
+      <ul class="service-list">
+        <li>General Physician Consultation</li>
+        <li>Fever, Cold & Infection Treatment</li>
+        <li>BP & Diabetes Checkup</li>
+        <li>Minor Medical Procedures</li>
+        <li>Routine Health Checkups</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Doctor Section -->
+  <section class="doctor">
+    <div class="container doctor-box">
+      <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d" alt="Doctor">
+      <div>
+        <h3>Dr. Ankit Sharma</h3>
+        <p><strong>MBBS, MD</strong></p>
+        <p>10+ years of experience in general medicine. Known for clear explanation and patient-friendly treatment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timings -->
+  <section class="info">
+    <div class="container info-grid">
+      <div>
+        <h4>Clinic Timings</h4>
+        <p>Mon – Sat</p>
+        <p>9:00 AM – 2:00 PM</p>
+        <p>5:00 PM – 9:00 PM</p>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Near XYZ Market</p>
+        <p>Your City, India</p>
+        <p>📞 +91 12345 67890</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="appointment">
+    <h2>Need Medical Help Today?</h2>
+    <a href="tel:+911234567890" class="btn">Call Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 CityCare Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
